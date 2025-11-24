@@ -1,113 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doug Cavalheiro - Controller | Business Administrator | CRA Member</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #ADD8E6; /* Light blue color */
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav {
-            background-color: #444;
-            overflow: hidden;
-        }
-        nav a {
-            float: left;
-            display: block;
-            color: #fff;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        section {
-            padding: 20px;
-        }
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            overflow: hidden;
-            padding-bottom: 100px; /* Additional padding to ensure content is not cut off */
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        .about-me, .contact {
-            background: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .profile-pic {
-            display: block;
-            margin: 20px auto;
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Doug Cavalheiro — Resume</title>
+  <style>
+    :root{--accent:#0b66c3;--muted:#555}
+    body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;line-height:1.45;color:#222;margin:0;padding:24px;background:#f7f8fb}
+    .container{max-width:900px;margin:0 auto;background:#fff;padding:28px;border-radius:10px;box-shadow:0 8px 30px rgba(20,20,50,0.06)}
+    header{display:flex;justify-content:space-between;align-items:center;gap:20px}
+    h1{font-size:22px;margin:0}
+    .meta{font-size:13px;color:var(--muted)}
+    hr{border:0;border-top:1px solid #eee;margin:18px 0}
+    .section{margin-bottom:14px}
+    .section h2{font-size:14px;margin:0 0 8px 0;color:var(--accent)}
+    ul{margin:6px 0 6px 18px}
+    .two-col{display:grid;grid-template-columns:1fr 160px;gap:20px}
+    .skills, .tech{font-size:13px}
+    .role{font-weight:600}
+    .muted{color:var(--muted);font-size:13px}
+    @media (max-width:720px){.two-col{grid-template-columns:1fr;}}
+    .badge{display:inline-block;padding:4px 8px;border-radius:999px;background:#f1f7ff;color:var(--accent);font-weight:600;font-size:12px}
+    .small-list{padding-left:14px;margin:6px 0}
+  </style>
 </head>
 <body>
+  <div class="container">
     <header>
+      <div>
         <h1>Doug Cavalheiro</h1>
-        <p>Controller | Business Administrator | CRA Member</p>
+        <div class="meta">Financial Consultant • Advisor • Controller</div>
+        <div class="meta" style="margin-top:6px">Location: Brazil • Email: <em>dcavalheiro@hotmail.com</em> • Phone: <em>818-300-3874 | +55 11 98946-0454</em> • LinkedIn: <em>www.linkedin.com/in/dcavalheiro</em></div>
+      </div>
+      <div style="text-align:right">
+        <div class="badge">Finance & Strategy</div>
+      </div>
     </header>
-    <nav>
-        <a href="#about-me">About Me</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="container">
-        <section id="about-me" class="about-me">
-            <h2>About Me</h2>
-            <img src="profile.jpg" alt="Doug Cavalheiro" class="profile-pic">
-            <p>I am a Controller for a group of companies with investments in the real estate and financial markets. Additionally, I am a Board of Directors Member and Administrator for a Prominent School in São Paulo, an Advisory Board member for Hotelaria Brasil Group-Barão Geraldo Branch, and the Founder of a business consulting firm specializing in long-term and short-term contracts.</p>
-            <p>Key services provided include:</p>
-            <ul>
-                <li>Maintain internal safeguards for revenue receipts, costs, team and organizational budgets and expenditures.</li>
-                <li>Preparation of monthly financial reports and cash flow management.</li>
-                <li>Provision of comprehensive financial reporting and updates to senior managers.</li>
-                <li>Evaluation and analysis of all operational and investment strategies.</li>
-                <li>Establishment of financial and operational benchmarks, budgets, project monitoring, and reporting standards in coordination with upper management on a biweekly, monthly, and annual basis.</li>
-                <li>Implementation of consistent accounting policies, practices, and procedures across all divisions, ensuring compliance with national and local legal standards while staying informed on proposed legislation.</li>
-                <li>Finance Forecasting.</li>
-                <li>Redefined job responsibilities and functions for administrative and operational staff, resulting in notable increases in job performance, task effectiveness, job satisfaction, and productivity.</li>
-            </ul>
-        </section>
-        <section id="contact" class="contact">
-            <h2>Contact</h2>
-            <p>You can reach me at:</p>
-            <p>Email: <a href="mailto:dcavalheiro1@hotmail.com">dcavalheiro1@hotmail.com</a></p>
-            <p>Phone: US +1 818 300 3874</p>
-            <p>Phone: São Paulo +55 11 98946-0454</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/dcavalheiro" target="_blank">linkedin.com/in/your-profile</a></p> 
-        </section>
+
+    <hr>
+
+    <section class="section">
+      <p><strong>Professional Summary</strong><br>
+      Independent financial advisor and consultant supporting diversified groups with investments across real estate and financial sectors. Skilled in internal controls, cash flow optimization, forecasting, and strategic analysis. Experienced with multinational, private, and small businesses in the U.S. and Brazil across Entertainment, Consulting, Banking, Investment Services, Real Estate, and Education.</p>
+    </section>
+
+    <section class="section">
+      <h2>Professional Experience</h2>
+
+      <div style="margin-top:8px">
+        <div class="role">Founder | Financial Consulting Firm</div>
+        <div class="muted">São Paulo, Brazil</div>
+        <ul class="small-list">
+          <li>Delivered strategic financial consulting across investment and operational sectors.</li>
+          <li>Led cash flow management, liquidity optimization, and FP&amp;A (budgeting, forecasting, variance analysis).</li>
+          <li>Improved operational controls and investment strategy assessments.</li>
+          <li>Managed due diligence, M&amp;A target identification, financing structures, and post-deal integration.</li>
+          <li>Strengthened budgeting and financial reporting processes; partnered with senior leadership to enhance performance.</li>
+        </ul>
+      </div>
+
+      <div style="margin-top:12px">
+        <div class="role">Independent Advisor &amp; Consultant</div>
+        <div class="muted">São Paulo, Brazil</div>
+        <ul class="small-list">
+          <li>Maintained internal controls over revenue, costs, and expenditures; ensured regulatory compliance.</li>
+          <li>Optimized cash flow and produced accurate financial forecasts to support strategic decisions.</li>
+          <li>Performed detailed financial analysis to identify growth opportunities and operational efficiencies.</li>
+        </ul>
+      </div>
+
+      <div style="margin-top:12px">
+        <div class="role">Advisory Board Member | Hotelaria Brasil Group — Barão Geraldo</div>
+        <div class="muted">São Paulo, Brazil</div>
+        <ul class="small-list">
+          <li>Contribute to strategic decision-making, governance, and administrative oversight.</li>
+          <li>Ensure compliance with regulatory and corporate standards; advise on financial matters.</li>
+        </ul>
+      </div>
+
+      <div style="margin-top:12px">
+        <div class="role">Board Member &amp; Administrator | Private School (São Paulo)</div>
+        <div class="muted">São Paulo, Brazil</div>
+        <ul class="small-list">
+          <li>Oversee administrative and financial operations; ensure compliance with educational regulations.</li>
+          <li>Implement policies to enhance performance and collaborate with stakeholders on improvement initiatives.</li>
+        </ul>
+      </div>
+
+      <div style="margin-top:12px">
+        <div class="role">Participations Accounting | Warner Bros.</div>
+        <div class="muted">Los Angeles, USA</div>
+        <ul class="small-list">
+          <li>Managed cross-functional teams and implemented process improvements that reduced reporting cycle times.</li>
+          <li>Specialized in royalty reporting and served on the Financial Contract Reporting (FCR) team for high-value contracts.</li>
+          <li>Managed the end-to-end royalty lifecycle—from contract setup through transaction verification and payment.</li>
+          <li>Provided insights on royalty trends to support strategic financial planning.</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <div class="two-col">
+      <section class="section">
+        <h2>Core Skills</h2>
+        <div class="skills">
+          <ul>
+            <li>Financial Planning &amp; Analysis (FP&amp;A)</li>
+            <li>Cash Flow &amp; Liquidity Management</li>
+            <li>Internal Controls &amp; Compliance</li>
+            <li>Budgeting &amp; Forecasting</li>
+            <li>M&amp;A Analysis &amp; Due Diligence</li>
+            <li>Financial Reporting &amp; Audit Readiness</li>
+            <li>Operational Process Improvements</li>
+            <li>Strategic Advisory &amp; Governance</li>
+          </ul>
+        </div>
+      </section>
+
+      <aside class="section">
+        <h2>Quick Facts</h2>
+        <div class="muted">Education</div>
+        <div style="margin-bottom:8px">BA in Business Administration</div>
+
+        <div class="muted">Languages</div>
+        <div style="margin-bottom:8px">Portuguese (Native) • English (Fluent)</div>
+
+        <div class="muted">Technical</div>
+        <div class="tech">Excel (Advanced), Power BI, ERP Tools, Financial Modeling, SAP/Oracle (if applicable)</div>
+      </aside>
     </div>
-    <footer>
-        <p>&copy; 2024 Doug Cavalheiro. All rights reserved.</p>
-    </footer>
+
+    <hr>
+    <div style="font-size:12px;color:var(--muted);text-align:center">Ready for GitHub upload • Replace bracketed placeholders before publishing</div>
+
+  </div>
 </body>
 </html>
