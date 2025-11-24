@@ -19,9 +19,20 @@
     .skills, .tech{font-size:13px}
     .role{font-weight:600}
     .muted{color:var(--muted);font-size:13px}
-    @media (max-width:720px){.two-col{grid-template-columns:1fr;}}
+    @media (max-width:720px){.two-col{grid-template-columns:1fr;}
+      header{flex-direction:column;align-items:flex-start;}
+    }
     .badge{display:inline-block;padding:4px 8px;border-radius:999px;background:#f1f7ff;color:var(--accent);font-weight:600;font-size:12px}
     .small-list{padding-left:14px;margin:6px 0}
+    .profile-pic {
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 2px 8px rgba(20,20,50,0.07);
+      margin-bottom: 8px;
+      display: block;
+    }
   </style>
 </head>
 <body>
@@ -33,12 +44,12 @@
         <div class="meta" style="margin-top:6px">Location: Brazil • Email: <em>dcavalheiro@hotmail.com</em> • Phone: <em>818-300-3874 | +55 11 98946-0454</em> • LinkedIn: <em>www.linkedin.com/in/dcavalheiro</em></div>
       </div>
       <div style="text-align:right">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic" />
         <div class="badge">Finance & Strategy</div>
       </div>
     </header>
 
     <hr>
-<img src="profile.jpg" alt="Profile Picture" width="160" style="border-radius: 50%; display: block; margin-bottom: 24px;" />
     <section class="section">
       <p><strong>Professional Summary</strong><br>
       Independent financial advisor and consultant supporting diversified groups with investments across real estate and financial sectors. Skilled in internal controls, cash flow optimization, forecasting, and strategic analysis. Experienced with multinational, private, and small businesses in the U.S. and Brazil across Entertainment, Consulting, Banking, Investment Services, Real Estate, and Education.</p>
@@ -135,5 +146,3 @@
   </div>
 </body>
 </html>
-
-
